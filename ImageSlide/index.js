@@ -3,20 +3,22 @@ let slideindex = 0;
 let intervalid = null;
 
 document.addEventListener("DOMContentLoaded",intitialSlider)
-
+// hieu ung chuyen tiep slide
 function intitialSlider()
 {   if(webpage.length > 0){
      webpage[slideindex].classList.add("displaySlide");
     intervalid =setInterval(nextside,5000);
-}
+     }
    
     
 }
 function showSlider(index)
-{   if(index >= webpage.length)
+{   // neu nhan tiep qua trang cuoi se tro ve trang dau
+     if(index >= webpage.length)
     {
         slideindex = 0;
     }
+     // neu an qua trang dau se ve trang cuoi
     else if (index < 0)
     {
         slideindex = webpage.length-1;
@@ -37,6 +39,7 @@ function prevside()
     slideindex -- ;
     showSlider(slideindex);
 }
+// chuyen qua slide tiep theo
 function nextside()
 {
     slideindex ++;
