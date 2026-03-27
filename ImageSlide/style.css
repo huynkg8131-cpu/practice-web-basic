@@ -1,0 +1,57 @@
+
+.Webpage
+{
+  position: relative;
+  width : 500px;
+  overflow : hidden ;
+  
+}
+.Webpage img 
+{
+    width : 100%;
+    height :500px;
+    display : none;
+}
+img.displaySlide
+{
+    display : block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    
+
+}
+
+.Webpage button 
+{
+    position : absolute;
+    bottom: 250px;
+    transform : translateY(20%);
+    font-size : 20px;
+    
+}
+.Prev 
+{
+    left : 0;
+}
+.Next 
+{ 
+    right : 0;
+}
+@keyframes fade 
+{
+    from { opacity: 0.2}
+    to {opacity : 1}
+}
+.info
+{
+    margin-left : 100px;
+}
+.rating span
+{
+    font-size : 40px;
+    color : lightcyan;
+}
+.rating span.active
+{
+    color : orange;
+}
